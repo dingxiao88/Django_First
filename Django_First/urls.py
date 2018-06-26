@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', dx_function.home),
     path('count/', dx_function.count),
+    path('about/', dx_function.about),
 ]
