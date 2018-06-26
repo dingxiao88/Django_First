@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import dx_function
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', dx_function.home),
+    path('count/', dx_function.count),
 ]
